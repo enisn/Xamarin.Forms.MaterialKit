@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SampleMaterialKit"
+             x:Class="SampleMaterialKit.MainPage"
+             Title="Main Menu">
+
+    <StackLayout>
+
+        <TableView>
+            <TableRoot>
+                <TableSection Title="Elements" >
+                    <TextCell Text="Controls" Tapped="Go_Controls" />
+                    <TextCell Text="Backdrop" Tapped="Go_BackdropSample" />
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </StackLayout>
+
+</ContentPage>

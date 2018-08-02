@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Frame xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:rendered="clr-namespace:Plugin.MaterialKit.Shared.Rendered"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:converters="clr-namespace:Plugin.MaterialKit.Shared.Converters"
+             x:Class="Plugin.MaterialKit.Shared.Common.BannerView"
+             Padding="5"
+             VerticalOptions="Start"
+             BackgroundColor="White">
+    <Frame.Resources>
+        <ResourceDictionary>
+            <converters:NullToFalseConverter x:Key="NullToFalseConverter"/>
+        </ResourceDictionary>
+    </Frame.Resources>
+    <Frame.Content>
+        <StackLayout>
+
+            <StackLayout Padding="5" Orientation="Horizontal">
+                <rendered:IconView Source="{Binding Icon}" FillColor="Accent"/>
+                <Label Text="{Binding Text}" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                <Button Text="{Binding Cancel}" Clicked="Close" TextColor="Accent" BackgroundColor="Transparent" />
+                <Button Text="{Binding OK}" Clicked="Close" Command="{Binding Command}" CommandParameter="{Binding CommandParameter}" TextColor="Accent" android:Button.UseDefaultShadow="False" BackgroundColor="Transparent" IsVisible="{Binding OK,Converter={StaticResource NullToFalseConverter}}"/>
+            </StackLayout>
+        </StackLayout>
+    </Frame.Content>
+</Frame>

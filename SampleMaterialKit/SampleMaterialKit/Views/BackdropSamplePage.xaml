@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<backdrop:BackdropPage
+    xmlns:backdrop="clr-namespace:Plugin.MaterialKit.Shared.Backdrop;assembly=Plugin.MaterialKit"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SampleMaterialKit.Views.BackdropSamplePage"
+    Title="Backdrop">
+
+    <backdrop:BackdropPage.BackdropChildren>
+        
+        <backdrop:BackdropView Title="Filter" Icon="filter_icon.png" >
+            <StackLayout Padding="25">
+                <DatePicker TextColor="White" BackgroundColor="Transparent"  />
+                <DatePicker TextColor="White" BackgroundColor="Transparent"  />
+                <TimePicker TextColor="White" BackgroundColor="Transparent"  />
+            </StackLayout>
+        </backdrop:BackdropView>
+
+        <backdrop:BackdropView Title="Input" Icon="reorder_icon.png" >
+            <StackLayout Padding="25">
+                <Entry Placeholder="Use Here to Filter More" TextColor="White" PlaceholderColor="WhiteSmoke" BackgroundColor="Transparent" />                
+            </StackLayout>
+        </backdrop:BackdropView>
+        
+    </backdrop:BackdropPage.BackdropChildren>
+
+
+    <backdrop:BackdropPage.FrontContent>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Entry Placeholder="Sample Entry" />
+                <Entry Placeholder="Sample Entry" />
+                <Entry Placeholder="Sample Entry" />
+                <Entry Placeholder="Sample Entry" />
+                <BoxView Color="Purple" HeightRequest="20"/>
+                <Label Text="Velit sit iriure diam tempor in dolore ut at labore illum takimata laoreet sit amet ipsum amet sit duo gubergren amet et kasd justo quis accusam invidunt voluptua ea diam est accusam elitr erat sit kasd laoreet nonumy tincidunt no rebum labore diam ipsum dolore sed stet rebum dolor tempor nonumy dolores et no consequat kasd ut ut rebum et mazim facilisi consequat molestie et augue luptatum lorem blandit consequat stet vero cum euismod dolor kasd ut sit et eirmod no sanctus vero sit dolor eirmod eirmod gubergren dolores sanctus sed ipsum vero dolore invidunt iusto ipsum vero magna takimata voluptua no no tempor sed et dolore et takimata diam gubergren velit consetetur diam takimata tempor duo nostrud sed sed voluptua dolores invidunt clita eos rebum lorem sed invidunt magna stet gubergren ea exerci augue amet elitr justo accusam ut accumsan amet diam nostrud aliquyam dolore velit ipsum suscipit ea justo nam hendrerit laoreet option ut eos sit aliquyam voluptua duo sed ipsum voluptua gubergren lorem accumsan vel dolor sea amet congue diam clita ipsum illum sed iriure et volutpat no amet suscipit takimata sed takimata justo veniam no accusam sed diam dolore nonumy duo labore sadipscing labore dolores elit clita lorem labore commodo et accumsan dolor erat illum justo justo amet justo diam velit duo invidunt vero ut lorem veniam dolore voluptua tempor feugiat lorem vero gubergren nibh cum assum takimata dolore magna vero est et takimata nonumy duo ut diam hendrerit diam dignissim gubergren est dolor elitr et eos et et delenit et congue sed nibh eu ea amet sadipscing et ea congue clita ullamcorper gubergren ex dolore dolor erat takimata duo option vero in ut lorem accusam erat at duo dolore voluptua eos sed voluptua aliquip consetetur consetetur nulla takimata eos sit no sanctus dolore sea sea ea eirmod veniam kasd illum ipsum elitr lorem amet gubergren sea elitr ut kasd et et elitr tempor sadipscing voluptua dolore elit vel consetetur tempor erat velit labore amet ea erat erat feugait amet magna aliquyam invidunt diam lorem ipsum elit elitr diam consetetur invidunt dolor esse dolor sea sit nonumy et enim sit ut dignissim nostrud dolores eos ipsum rebum sea eirmod rebum elitr erat ut stet no invidunt et ut tempor sed quis nibh accusam ipsum sea invidunt at et voluptua esse sit ipsum aliquyam in diam lorem accusam ut dolores feugiat nonumy iusto nonummy clita dolore vero nisl esse eirmod accusam takimata assum kasd vero est at delenit sanctus gubergren eirmod sed ullamcorper dolore euismod duo minim dolore eos consetetur nostrud ea invidunt tempor takimata dolor sed dolor no duo ut sit diam eirmod lorem rebum nibh dolore molestie eirmod sit invidunt ea at nonumy ipsum nobis placerat ipsum consetetur eos sed nulla elitr dolor takimata et dolores voluptua et rebum vero est tempor at accusam eirmod justo diam ipsum sea magna rebum volutpat iriure invidunt et kasd takimata lorem justo erat diam ea nonumy consetetur odio ipsum diam ipsum elitr sed sanctus clita takimata sed rebum sed amet exerci ea vel rebum aliquam dolores kasd te no blandit eos elitr dolore sed et takimata sit suscipit diam tincidunt magna sit nonumy erat sed sanctus invidunt vero ipsum erat rebum gubergren tempor kasd duo nonumy tempor lorem duo dolor dolores et kasd lorem duo velit lorem dolor labore lorem clita vulputate vero invidunt justo sea voluptua ipsum esse stet magna invidunt voluptua magna eirmod dolor tempor consequat no dolore et hendrerit sit sadipscing at eum justo nulla consetetur diam takimata nonumy possim commodo dolores accumsan est justo elitr kasd clita ea molestie lorem dolores aliquyam elitr veniam" />
+                <Button Text="DisplayBanner" Clicked="Button_Clicked" />
+            </StackLayout>
+        </ScrollView>
+    </backdrop:BackdropPage.FrontContent>
+</backdrop:BackdropPage>
