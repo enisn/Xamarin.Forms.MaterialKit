@@ -12,6 +12,7 @@
                 <TableSection Title="Elements" >
                     <TextCell Text="Controls" Tapped="Go_Controls" />
                     <TextCell Text="Backdrop" Tapped="Go_BackdropSample" />
+                    <TextCell Text="Banner" Tapped="Go_DefaultPage" />
                 </TableSection>
             </TableRoot>
         </TableView>

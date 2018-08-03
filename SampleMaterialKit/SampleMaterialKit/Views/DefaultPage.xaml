@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:MaterialContentPage
+    xmlns:base="clr-namespace:Plugin.MaterialKit.Shared.Base;assembly=Plugin.MaterialKit"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleMaterialKit.Views.DefaultPage">
+    <base:MaterialContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="nonummy duis et facilisi eos sed labore stet assum stet clita illum no clita invidunt justo takimata nisl at tincidunt eos dolor eirmod sadipscing volutpat praesent et amet ut dolores sit suscipit consequat volutpat tation kasd sanctus aliquyam molestie ipsum sea ipsum dolor et eos magna nobis dolore commodo justo ea et gubergren dolores vel dolores euismod stet tempor diam feugait vel diam et duo dolore stet magna justo eum stet vulputate eu lobortis ipsum accusam amet consectetuer clita amet et consetetur volutpat et consequat stet sit et amet diam invidunt sadipscing dolor adipiscing sit et takimata dolor ipsum gubergren lobortis sed dolore est sanctus diam sit sanctus magna rebum duo nonumy nostrud molestie at rebum amet duis vel est facilisis kasd esse amet lobortis et invidunt invidunt tation nulla adipiscing ipsum et" />
+            <Button Text="DisplayBanner" Clicked="Display_Banner"/>
+        </StackLayout>
+    </base:MaterialContentPage.Content>
+</base:MaterialContentPage>

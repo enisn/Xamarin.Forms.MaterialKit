@@ -17,10 +17,5 @@ namespace SampleMaterialKit.Views
 		{
 			InitializeComponent ();
 		}
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            DisplayBanner(new BannerContext(null,"Hi There, this is my Message!","Close","OK",new Command(()=>DisplayAlert("","Clicked from banner.\nClicked!","OK")),null));
-        }
     }
 }

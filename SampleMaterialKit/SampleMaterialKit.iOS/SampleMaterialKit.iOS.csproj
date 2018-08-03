@@ -178,4 +178,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\reorder_icon%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\warning_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\warning_icon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\warning_icon%403x.png" />
+  </ItemGroup>
 </Project>

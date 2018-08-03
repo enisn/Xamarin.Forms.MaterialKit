@@ -24,5 +24,10 @@ namespace SampleMaterialKit
         {
             Navigation.PushAsync(new BackdropSamplePage());
         }
+
+        private void Go_DefaultPage(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new DefaultPage());
+        }
     }
 }

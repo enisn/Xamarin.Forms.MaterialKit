@@ -6,7 +6,7 @@
              xmlns:converters="clr-namespace:Plugin.MaterialKit.Shared.Converters"
              x:Class="Plugin.MaterialKit.Shared.Common.BannerView"
              Padding="5"
-             VerticalOptions="Start"
+             VerticalOptions="End"
              BackgroundColor="White">
     <Frame.Resources>
         <ResourceDictionary>

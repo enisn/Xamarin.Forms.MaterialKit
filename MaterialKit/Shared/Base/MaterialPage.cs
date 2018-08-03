@@ -2,7 +2,9 @@
 using Plugin.MaterialKit.Shared.Common;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -11,23 +13,29 @@ namespace Plugin.MaterialKit.Shared.Base
     public class MaterialContentPage : ContentPage
     {
         private bool _bannerPresented;
-
-        public MaterialContentPage() : base()
+        public new static readonly BindableProperty ContentProperty = BindableProperty.Create(nameof(Content),typeof(View),typeof(MaterialContentPage),propertyChanged:(bo,ov,nv)=>(bo as MaterialContentPage).SetContent((View)nv));
+        async void SetContent(View view)
+        {
+            this.Content = view;
+            this.UpdateChildrenLayout();
+        }
+        public MaterialContentPage()
         {
             base.Content = new Grid
             {
                 Children =
                 {
                     new ContentView(),
-                    new BannerView(),
+                    new BannerView()
                 }
             };
         }
+
         protected override void OnSizeAllocated(double width, double height)
         {
             base.OnSizeAllocated(width, height);
             if (Banner.Height > 0 && !IsBannerPresented)
-                Banner.TranslateTo(0, -Banner.Height, 1);
+                Banner.TranslateTo(0, Banner.BannerPlacement == BannerView.Placement.Top ? -Banner.Height : Banner.Height, 1);
         }
         public void DisplayBanner(IBannerContent content)
         {
@@ -39,29 +47,34 @@ namespace Plugin.MaterialKit.Shared.Base
             Banner.BindingContext = context;
             IsBannerPresented = true;
         }
-        void UpdateBanner()
+        internal void UpdateBanner()
         {
             if (IsBannerPresented)
             {
                 Banner.TranslateTo(0, 0, 250, Easing.SpringIn);
-                this.Content.LayoutTo(new Rectangle(0, Banner.Height, this.Width, this.Height - Banner.Height));
-                //this.Animate("BannerOpennig", (d) => new Rectangle(0, Banner.Height * d, this.Width, (this.Height - Banner.Height) * d));
-                Banner.InputTransparent = false;
 
-                //this.Padding = new Thickness(this.Padding.Left, this.Padding.Top + Banner.Height + 10, this.Padding.Right, this.Padding.Bottom);
+                this.Content.LayoutTo(new Rectangle(
+                    0, Banner.BannerPlacement == BannerView.Placement.Top ? Banner.Height : 0,
+                    this.Width, this.Height - Banner.Height)
+                    );
+
+                Banner.InputTransparent = false;
             }
             else
             {
-                Banner.TranslateTo(0, -Banner.Height, 250, Easing.SpringOut);
+                Banner.TranslateTo(0, Banner.Height * (int)Banner.BannerPlacement, 250, Easing.SpringOut);
+
                 this.Content.LayoutTo(new Rectangle(0, 0, this.Width, this.Height));
-                //this.Animate("BannerHiding", (d) => new Rectangle(0, Banner.Height * (1 - d), this.Width, (this.Height + Banner.Height) * d));
-                //this.Padding = new Thickness(this.Padding.Left, this.Padding.Top - Banner.Height - 10, this.Padding.Right, this.Padding.Bottom);
                 Banner.InputTransparent = true;
             }
         }
         internal bool IsBannerPresented { get => _bannerPresented; set { _bannerPresented = value; UpdateBanner(); } }
-        public virtual View Banner { get => (base.Content as Grid).Children[1]; set => (base.Content as Grid).Children[1] = value; }
-        public new View Content { get => ((base.Content as Grid).Children[0] as ContentView).Content; set => ((base.Content as Grid).Children[0] as ContentView).Content = value; }
+        public virtual BannerView Banner { get => (base.Content as Grid)?.Children[1] as BannerView; set => (base.Content as Grid).Children[1] = value; }
+        public new View Content
+        {
+            get => ((base.Content as Grid)?.Children.FirstOrDefault() as ContentView ).Content;
+            set => ((base.Content as Grid)?.Children.FirstOrDefault() as ContentView).Content = value;
+        }
 
         public class BannerContext : IBannerContent
         {
