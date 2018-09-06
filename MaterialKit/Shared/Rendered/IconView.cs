@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace Plugin.MaterialKit.Shared.Rendered
+namespace Plugin.MaterialKit.Core.Shared.Rendered
 {
     public class IconView : View
     {

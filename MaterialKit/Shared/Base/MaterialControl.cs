@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Plugin.MaterialKit.Shared.Base
+namespace Plugin.MaterialKit.Core.Shared.Base
 {
     public class MaterialControl
     {

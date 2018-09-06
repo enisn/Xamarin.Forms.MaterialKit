@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
 
-namespace Plugin.MaterialKit.Shared.Controls
+namespace Plugin.MaterialKit.Core.Shared.Controls
 {
     public class Checkbox : StackLayout
     {

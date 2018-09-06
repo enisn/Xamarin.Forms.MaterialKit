@@ -9,6 +9,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Lib\MaterialKit.Backdrop\MaterialKit.Backdrop.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Plugin.MaterialKit">
       <HintPath>..\..\MaterialKit\bin\Debug\netstandard2.0\Plugin.MaterialKit.dll</HintPath>
     </Reference>

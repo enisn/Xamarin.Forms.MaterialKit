@@ -151,9 +151,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\MaterialKit\MaterialKit.csproj">
+    <ProjectReference Include="..\..\MaterialKit\MaterialKit.Core.csproj">
       <Project>{1BA18585-9D8F-4C4E-831A-5C805A904974}</Project>
-      <Name>MaterialKit</Name>
+      <Name>MaterialKit.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\SampleMaterialKit\SampleMaterialKit.csproj">
       <Project>{C04B8723-5E38-497E-BC17-60565D9EC32A}</Project>

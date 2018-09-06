@@ -1,4 +1,4 @@
-﻿using Plugin.MaterialKit.Shared.Base;
+﻿using Plugin.MaterialKit.Core.Shared.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +16,7 @@ namespace SampleMaterialKit.Views
 		public DefaultPage ()
 		{
 			InitializeComponent();
-            Banner.BannerPlacement = Plugin.MaterialKit.Shared.Common.BannerView.Placement.Top;
+            Banner.BannerPlacement = Plugin.MaterialKit.Core.Shared.Common.BannerView.Placement.Top;
 		}
 
         private void Display_Banner(object sender, EventArgs e)

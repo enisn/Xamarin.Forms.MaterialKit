@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Frame xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:rendered="clr-namespace:Plugin.MaterialKit.Shared.Rendered"
+             xmlns:rendered="clr-namespace:Plugin.MaterialKit.Core.Shared.Rendered"
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
-             xmlns:converters="clr-namespace:Plugin.MaterialKit.Shared.Converters"
-             x:Class="Plugin.MaterialKit.Shared.Common.BannerView"
+             xmlns:converters="clr-namespace:Plugin.MaterialKit.Core.Shared.Converters"
+             x:Class="Plugin.MaterialKit.Core.Shared.Common.BannerView"
              Padding="5"
              VerticalOptions="End"
              BackgroundColor="White">

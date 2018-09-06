@@ -1,6 +1,6 @@
 ﻿using CoreGraphics;
 using Plugin.MaterialKit.Apple;
-using Plugin.MaterialKit.Shared.Rendered;
+using Plugin.MaterialKit.Core.Shared.Rendered;
 using System.ComponentModel;
 using UIKit;
 using Xamarin.Forms;

@@ -1,5 +1,5 @@
-﻿using Plugin.MaterialKit.Shared.Abstraction;
-using Plugin.MaterialKit.Shared.Common;
+﻿using Plugin.MaterialKit.Core.Shared.Abstraction;
+using Plugin.MaterialKit.Core.Shared.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace Plugin.MaterialKit.Shared.Base
+namespace Plugin.MaterialKit.Core.Shared.Base
 {
     public class MaterialContentPage : ContentPage
     {

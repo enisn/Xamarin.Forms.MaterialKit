@@ -1,0 +1,76 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <!-- The identifier that must be unique within the hosting gallery -->
+    <id>MaterialKit.Backdrop</id>
+
+    <!-- The package version number that is used when resolving dependencies -->
+    <version>1.0.0</version>
+
+    <!-- Authors contain text that appears directly on the gallery -->
+    <authors>Enis Necipoglu</authors>
+
+    <!-- Owners are typically nuget.org identities that allow gallery
+            users to easily find other packages by the same owners.  -->
+    <owners>Enis Necipoglu</owners>
+
+    <!-- License and project URLs provide links for the gallery -->
+    <licenseUrl>https://github.com/enisn/Xamarin.Forms.MaterialKit</licenseUrl>
+    <projectUrl>https://github.com/enisn/Xamarin.Forms.MaterialKit</projectUrl>
+
+    <!-- The icon is used in Visual Studio's package manager UI -->
+    <iconUrl>http://enisnecipoglu.com/Plugins/materialkit_backdrop.png</iconUrl>
+
+    <!-- If true, this value prompts the user to accept the license when
+            installing the package. -->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+    <!-- Any details about this particular release -->
+    <releaseNotes>First release</releaseNotes>
+
+    <title>Material Design Backdrop Page</title>
+    <summary>
+      A backdrop page from Material Components for Xamarin Forms.
+    </summary>
+
+    <description>
+      A backdrop page like below:
+      https://material.io/design/components/backdrop.html
+      
+      It supports Android and iOS under Xamarin Forms
+
+    </description>
+
+    <!-- Copyright information -->
+    <copyright>Copyright ©2018 Enis Necipoglu</copyright>
+
+    <!-- Tags appear in the gallery and can be used for tag searches -->
+    <tags>Material Design, MaterialKit, Material, Xamarin, Xamarin Forms, Material Forms, Xamarin Forms Material, Backdrop, Material Page, Material Backdrop, Backdrop Page</tags>
+
+    <!-- Dependencies are automatically installed when the package is installed -->
+    <dependencies>
+      <dependency id="Xamarin.Forms" version="3.1.0.583944" />
+      <dependency id="MaterialKit.Core" version="1.0.0" />
+    </dependencies>
+  </metadata>
+
+  <!-- A readme.txt to display when the package is installed -->
+  <files>
+    <!--Readme to display after installaction-->
+    <!--<file src="readme.txt" target="" />-->
+
+    <file src="Resources\**.*.xml" target="" />
+    <file src="Resources\**.*.png" target="" />
+
+    <!-- Cross-platform reference assemblies -->
+    <file src="bin\Release\netstandard2.0\Plugin.MaterialKit.Backdrop.dll" target="lib\netstandard2.0\Plugin.MaterialKit.Backdrop.dll" />
+    <file src="bin\Release\netstandard2.0\Plugin.MaterialKit.Backdrop.xml" target="lib\netstandard2.0\Plugin.MaterialKit.Backdrop.xml" />
+
+    <file src="bin\Release\monoandroid80\Plugin.MaterialKit.Backdrop.dll" target="lib\netstandard2.0\Plugin.MaterialKit.Backdrop.dll" />
+    <file src="bin\Release\monoandroid80\Plugin.MaterialKit.Backdrop.xml" target="lib\netstandard2.0\Plugin.MaterialKit.Backdrop.xml" />
+
+    <file src="bin\Release\xamarin.ios10\Plugin.MaterialKit.Backdrop.dll" target="lib\netstandard2.0\Plugin.MaterialKit.Backdrop.dll" />
+    <file src="bin\Release\xamarin.ios10\Plugin.MaterialKit.Backdrop.xml" target="lib\netstandard2.0\Plugin.MaterialKit.Backdrop.xml" />
+
+  </files>
+</package>

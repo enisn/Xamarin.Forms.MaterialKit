@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 
-namespace Plugin.MaterialKit.Shared.Abstraction
+namespace Plugin.MaterialKit.Core.Shared.Abstraction
 {
     public interface IBannerContent
     {

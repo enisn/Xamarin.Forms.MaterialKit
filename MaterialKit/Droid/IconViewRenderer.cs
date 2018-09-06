@@ -1,17 +1,14 @@
 ﻿using Android.Content;
 using Android.Graphics;
 using Android.Widget;
-using Plugin.MaterialKit.Droid;
-using Plugin.MaterialKit.Shared.Rendered;
-using System;
-using System.Collections.Generic;
+using Plugin.MaterialKit.Core.Droid;
+using Plugin.MaterialKit.Core.Shared.Rendered;
 using System.ComponentModel;
-using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
 [assembly: ExportRenderer(typeof(IconView), typeof(IconViewRenderer))]
-namespace Plugin.MaterialKit.Droid
+namespace Plugin.MaterialKit.Core.Droid
 {
     public class IconViewRenderer : ViewRenderer<IconView, ImageView>
     {

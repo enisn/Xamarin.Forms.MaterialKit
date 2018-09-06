@@ -1,4 +1,4 @@
-﻿using Plugin.MaterialKit.Shared.Base;
+﻿using Plugin.MaterialKit.Core.Shared.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Plugin.MaterialKit.Shared.Common
+namespace Plugin.MaterialKit.Core.Shared.Common
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BannerView : Frame

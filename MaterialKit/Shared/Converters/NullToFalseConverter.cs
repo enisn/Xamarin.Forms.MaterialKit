@@ -4,7 +4,7 @@ using System.Globalization;
 using System.Text;
 using Xamarin.Forms;
 
-namespace Plugin.MaterialKit.Shared.Converters
+namespace Plugin.MaterialKit.Core.Shared.Converters
 {
     public class NullToFalseConverter : IValueConverter
     {
