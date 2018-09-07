@@ -90,8 +90,16 @@ Will be added...
 <hr />
 
 <center> 
-  <img src="https://media.giphy.com/media/1xlo1b4afWmTOBIFG3/giphy.gif" height="480"/>
-    <hr/>
+
+<table>
+<tr>
+<td><img src="https://media.giphy.com/media/1xlo1b4afWmTOBIFG3/giphy.gif" /></td>
+<td><img src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p280x280/41193932_303776750401814_4151777789340549120_n.png?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=69a7c635222f2cfa37f91677edae0a86&oe=5C251E07" /></td>
+<td><img src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p280x280/41062806_245109362843998_4556611923373719552_n.png?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=ffd37b55776b7febf0a079fb1b61d69b&oe=5C2A1138" /></td>
+<td><img src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p280x280/41078152_233577757334843_3495207040744161280_n.png?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=43ca7b3e40c6fb849b623fba4259d094&oe=5BF60461" /></td>
+</tr>
+</table>
  From material.io:
  <a href="https://material.io/design/components/backdrop.html">Backdrop</a>
 </center>
+    <hr/>
