@@ -5,10 +5,15 @@
              x:Class="SampleMaterialKit.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <TableView>
+            <TableRoot>
+                <TableSection Title="List of Content">
+                    <ImageCell ImageSource="http://enisnecipoglu.com/Plugins/materialkit_backdrop.png"
+                               Text="Backdrop Sample"
+                               Tapped="Backdrop_Tapped"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
     </StackLayout>
 
 </ContentPage>

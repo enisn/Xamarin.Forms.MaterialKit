@@ -12,4 +12,18 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Lib\MaterialKit.Backdrop\MaterialKit.Backdrop.csproj" />
+    <ProjectReference Include="..\..\Lib\MaterialKit\MaterialKit.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\BackdropSample.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ChipsSample.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>

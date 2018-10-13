@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SampleMaterialKit.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,5 +14,7 @@ namespace SampleMaterialKit
         {
             InitializeComponent();
         }
+
+        private void Backdrop_Tapped(object sender, EventArgs e) => Navigation.PushAsync(new Views.BackdropSample());
     }
 }

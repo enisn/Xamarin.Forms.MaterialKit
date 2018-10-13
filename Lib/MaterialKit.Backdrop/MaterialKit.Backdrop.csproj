@@ -86,7 +86,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\MaterialKit\MaterialKit.Core.csproj" />
+    <ProjectReference Include="..\MaterialKit\MaterialKit.Core.csproj" />
   </ItemGroup>
 
   <!--Additional item groups-->

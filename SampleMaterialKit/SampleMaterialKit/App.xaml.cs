@@ -11,7 +11,11 @@ namespace SampleMaterialKit
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage())
+            {
+                BarBackgroundColor = Color.FromHex("#2196F3"),
+                BarTextColor = Color.White
+            };
         }
 
         protected override void OnStart()
