@@ -157,4 +157,13 @@
       <Name>SampleMaterialKit</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\filter_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\filter_icon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\filter_icon%403x.png" />
+  </ItemGroup>
 </Project>
