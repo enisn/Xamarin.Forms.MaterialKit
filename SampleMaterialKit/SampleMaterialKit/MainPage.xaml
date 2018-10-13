@@ -2,20 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SampleMaterialKit"
-             x:Class="SampleMaterialKit.MainPage"
-             Title="Main Menu">
+             x:Class="SampleMaterialKit.MainPage">
 
     <StackLayout>
-
-        <TableView>
-            <TableRoot>
-                <TableSection Title="Elements" >
-                    <TextCell Text="Controls" Tapped="Go_Controls" />
-                    <TextCell Text="Backdrop" Tapped="Go_BackdropSample" />
-                    <TextCell Text="Banner" Tapped="Go_DefaultPage" />
-                </TableSection>
-            </TableRoot>
-        </TableView>
+        <!-- Place new controls here -->
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
     </StackLayout>
 
 </ContentPage>

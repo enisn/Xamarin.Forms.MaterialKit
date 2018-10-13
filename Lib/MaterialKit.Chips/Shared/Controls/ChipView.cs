@@ -43,8 +43,8 @@ namespace Plugin.MaterialKit.Chips.Shared.Controls
             imgCancel.IsVisible = IsDeletable;
         }
 
-        public static readonly BindableProperty CommandProperty = 
-            BindableProperty.Create(nameof(Command),typeof(Command),typeof(ChipView),null,propertyChanged: (bo,ov,nv)=> (bo as ChipView).Command = (Command)nv)
+        public static readonly BindableProperty CommandProperty =
+            BindableProperty.Create(nameof(Command), typeof(Command), typeof(ChipView), null, propertyChanged: (bo, ov, nv) => (bo as ChipView).Command = (Command)nv);
         public static readonly BindableProperty IsDeletableProperty =
             BindableProperty.Create(nameof(IsDeletable), typeof(bool), typeof(ChipView), true, propertyChanged: (bo, ov, nv) => (bo as ChipView).UpdateIsDeletable());
     }

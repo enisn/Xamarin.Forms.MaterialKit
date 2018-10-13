@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
-using Plugin.MaterialKit.Shared.Controls;
 using UIKit;
 
 namespace SampleMaterialKit.iOS
@@ -25,6 +24,7 @@ namespace SampleMaterialKit.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
+
             return base.FinishedLaunching(app, options);
         }
     }

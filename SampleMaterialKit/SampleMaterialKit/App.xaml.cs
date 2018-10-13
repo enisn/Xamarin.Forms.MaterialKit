@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,8 +10,8 @@ namespace SampleMaterialKit
         public App()
         {
             InitializeComponent();
-            
-            MainPage = new NavigationPage(new MainPage()) { BarBackgroundColor = Color.FromHex("#FF4081"), BarTextColor = Color.White };
+
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
