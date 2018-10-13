@@ -1,12 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Plugin.MaterialKit.Chips.Shared.Controls;assembly=Plugin.MaterialKit.Chips"
+             xmlns:rendered="clr-namespace:Plugin.MaterialKit.Core.Shared.Rendered;assembly=Plugin.MaterialKit"
              x:Class="SampleMaterialKit.Views.ChipsSample">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="20">
+
+            <controls:ChipView BackgroundColor="Accent" Text="Hello !" />
+            <controls:ChipView Icon="account_icon.png" BackgroundColor="Black" Text="This is secondd !" />
+            <controls:ChipView Icon="account_icon.png"  BackgroundColor="YellowGreen" Text="Enis" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

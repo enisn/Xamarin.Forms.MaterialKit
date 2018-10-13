@@ -152,6 +152,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
+    <ProjectReference Include="..\..\Lib\MaterialKit\MaterialKit.Core.csproj">
+      <Project>{fc20ffbf-452c-4438-ae0e-95c1852545f1}</Project>
+      <Name>MaterialKit.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SampleMaterialKit\SampleMaterialKit.csproj">
       <Project>{86AAF45B-508E-48B3-88B5-0D45469FD0FA}</Project>
       <Name>SampleMaterialKit</Name>
@@ -174,5 +178,23 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\reorder_icon%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cancel_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cancel_icon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cancel_icon%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\account_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\account_icon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\account_icon%403x.png" />
   </ItemGroup>
 </Project>

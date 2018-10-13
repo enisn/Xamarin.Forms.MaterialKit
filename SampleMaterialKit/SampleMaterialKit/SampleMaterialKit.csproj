@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Lib\MaterialKit.Backdrop\MaterialKit.Backdrop.csproj" />
+    <ProjectReference Include="..\..\Lib\MaterialKit.Chips\MaterialKit.Chips.csproj" />
     <ProjectReference Include="..\..\Lib\MaterialKit\MaterialKit.Core.csproj" />
   </ItemGroup>
 

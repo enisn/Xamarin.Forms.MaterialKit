@@ -8,9 +8,13 @@
         <TableView>
             <TableRoot>
                 <TableSection Title="List of Content">
-                    <ImageCell ImageSource="http://enisnecipoglu.com/Plugins/materialkit_backdrop.png"
+                    <ImageCell ImageSource="https://enisnecipoglu.com/Plugins/materialkit_backdrop.png"
                                Text="Backdrop Sample"
                                Tapped="Backdrop_Tapped"/>
+
+                    <ImageCell ImageSource="https://enisnecipoglu.com/Plugins/materialkit_core.png"
+                               Text="Chips Sample"
+                               Tapped="Chips_Tapped"/>
                 </TableSection>
             </TableRoot>
         </TableView>

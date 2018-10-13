@@ -16,5 +16,7 @@ namespace SampleMaterialKit
         }
 
         private void Backdrop_Tapped(object sender, EventArgs e) => Navigation.PushAsync(new Views.BackdropSample());
+
+        private void Chips_Tapped(object sender, EventArgs e) => Navigation.PushAsync(new ChipsSample());
     }
 }
