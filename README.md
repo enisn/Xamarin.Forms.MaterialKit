@@ -44,9 +44,25 @@ Material Componenets from material.io.
  From material.io:
  <a href="https://material.io/design/components/backdrop.html">Backdrop</a>
 </center>
-
 </td>
 </tr>
 </table>
+
+
+
+<table>
+<tr>
+	<td> <img src="http://enisnecipoglu.com/Plugins/materialkit_chips.png" width="120" /></td>
+	<td> 
+		<h1> MaterialKit.Core </h1>
+		<p> This is <a href="https://material.io/design/components/chips.html">Material Design Chips</a> for Xamarin Forms. </p>
+        <p> <a href="https://www.nuget.org/packages/MaterialKit.Chips/" rel="nofollow">
+            <img src="https://img.shields.io/badge/Nuget-0.9.0-blue.svg" style="max-width:100%;">
+         </a>  
+        </p> 
+	</td>
+</tr>
+</table>
+
 
 

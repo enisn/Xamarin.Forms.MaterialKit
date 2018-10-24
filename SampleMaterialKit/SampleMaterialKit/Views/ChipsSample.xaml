@@ -2,14 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:Plugin.MaterialKit.Chips.Shared.Controls;assembly=Plugin.MaterialKit.Chips"
-             xmlns:rendered="clr-namespace:Plugin.MaterialKit.Core.Shared.Rendered;assembly=Plugin.MaterialKit"
              x:Class="SampleMaterialKit.Views.ChipsSample">
     <ContentPage.Content>
         <StackLayout Padding="20">
 
             <controls:ChipView BackgroundColor="Accent" Text="Hello !" />
-            <controls:ChipView Icon="account_icon.png" BackgroundColor="Black" Text="This is secondd !" />
-            <controls:ChipView Icon="account_icon.png"  BackgroundColor="YellowGreen" Text="Enis" />
+            <controls:ChipView Icon="account_icon.png" BackgroundColor="Black" Text="This is a Chip!" />
+            <controls:ChipView Icon="account_icon.png"  BackgroundColor="Yellow" Text="Enis"/>
+
+            <controls:ChipView BackgroundColor="DarkMagenta" Text="And noontide from condole" IsDeletable="True"/>
+            <controls:ChipView BackgroundColor="LightGray" Text="Rhyme uses saw" IsDeletable="True" />
+            <controls:ChipView Icon="account_icon.png" BackgroundColor="LightCyan" Text="Would seemed seek" IsDeletable="True" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

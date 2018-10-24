@@ -15,13 +15,13 @@ namespace Plugin.MaterialKit.Chips.Shared.Controls
             ImageSource = "cancel_icon.png",
             BackgroundColor = Color.WhiteSmoke,
         };
-        IconView imgCancel = new IconView { Source = GlobalSetting.ImageSource, FillColor = GlobalSetting.BackgroundColor.ToSurfaceColor().MultiplyAlpha(0.65) };
+        IconView imgCancel = new IconView { Source = GlobalSetting.ImageSource, FillColor = GlobalSetting.BackgroundColor.ToSurfaceColor().MultiplyAlpha(0.65), IsVisible = false };
         IconView imgIcon = new IconView { FillColor = GlobalSetting.BackgroundColor.ToSurfaceColor().MultiplyAlpha(0.65) };
         Label lblContent = new Label { TextColor = GlobalSetting.BackgroundColor.ToSurfaceColor().MultiplyAlpha(0.65), HorizontalOptions = LayoutOptions.FillAndExpand };
         public ChipView()
         {
             base.HasShadow = false;
-            this.Padding = new Thickness(5, 0);
+            this.Padding = new Thickness(5);
             this.HorizontalOptions = LayoutOptions.Start;
             this.CornerRadius = 20;
             UpdateIsDeletable();
@@ -35,7 +35,24 @@ namespace Plugin.MaterialKit.Chips.Shared.Controls
                     imgCancel
                 }
             };
+            this.GestureRecognizers.Add(new TapGestureRecognizer
+            {
+                Command = new Command(Tapped)
+            });
+            imgCancel.GestureRecognizers.Add(new TapGestureRecognizer { Command = new Command(CalcelTapped) });
         }
+
+        private void CalcelTapped(object obj)
+        {
+            if (this.IsDeletable)
+                (this.Parent as Layout<View>)?.Children.Remove(this);
+        }
+        private void Tapped(object obj)
+        {
+            if (this.Command?.CanExecute(CommandParameter) ?? false)
+                this.Command?.Execute(CommandParameter);
+        }
+
         public bool IsDeletable { get => (bool)GetValue(IsDeletableProperty); set => SetValue(IsDeletableProperty, value); }
         public string Text { get => lblContent.Text; set => lblContent.Text = value; }
         public Command Command { get; set; }
@@ -62,6 +79,6 @@ namespace Plugin.MaterialKit.Chips.Shared.Controls
         public static readonly BindableProperty CommandProperty =
             BindableProperty.Create(nameof(Command), typeof(Command), typeof(ChipView), null, propertyChanged: (bo, ov, nv) => (bo as ChipView).Command = (Command)nv);
         public static readonly BindableProperty IsDeletableProperty =
-            BindableProperty.Create(nameof(IsDeletable), typeof(bool), typeof(ChipView), true, propertyChanged: (bo, ov, nv) => (bo as ChipView).UpdateIsDeletable());
+            BindableProperty.Create(nameof(IsDeletable), typeof(bool), typeof(ChipView), false, propertyChanged: (bo, ov, nv) => (bo as ChipView).UpdateIsDeletable());
     }
 }
