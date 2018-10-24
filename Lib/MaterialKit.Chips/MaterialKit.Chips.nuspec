@@ -59,8 +59,8 @@
     <!--Readme to display after installaction-->
     <!--<file src="readme.txt" target="" />-->
 
-    <file src="Resources\**.*.xml" target="" />
-    <file src="Resources\**.*.png" target="" />
+    <!--<file src="Resources\**.*.xml" target="" />
+    <file src="Resources\**.*.png" target="" />-->
 
     <!-- Cross-platform reference assemblies -->
     <file src="bin\Release\netstandard2.0\Plugin.MaterialKit.Chips.dll" target="lib\netstandard2.0\Plugin.MaterialKit.Chips.dll" />
