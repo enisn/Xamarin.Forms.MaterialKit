@@ -66,11 +66,11 @@
     <file src="bin\Release\netstandard2.0\Plugin.MaterialKit.Chips.dll" target="lib\netstandard2.0\Plugin.MaterialKit.Chips.dll" />
     <file src="bin\Release\netstandard2.0\Plugin.MaterialKit.Chips.xml" target="lib\netstandard2.0\Plugin.MaterialKit.Chips.xml" />
 
-    <file src="bin\Release\monoandroid80\Plugin.Chips.Backdrop.dll" target="lib\netstandard2.0\Plugin.MaterialKit.Chips.dll" />
-    <file src="bin\Release\monoandroid80\Plugin.Chips.Backdrop.xml" target="lib\netstandard2.0\Plugin.MaterialKit.Chips.xml" />
+    <file src="bin\Release\monoandroid81\MonoAndroid81\Plugin.MaterialKit.Chips.dll" target="lib\MonoAndroid81\Plugin.MaterialKit.Chips.dll" />
+    <file src="bin\Release\monoandroid81\MonoAndroid81\Plugin.MaterialKit.Chips.xml" target="lib\MonoAndroid81\Plugin.MaterialKit.Chips.xml" />
 
-    <file src="bin\Release\xamarin.ios10\Plugin.Chips.Backdrop.dll" target="lib\netstandard2.0\Plugin.MaterialKit.Chips.dll" />
-    <file src="bin\Release\xamarin.ios10\Plugin.Chips.Backdrop.xml" target="lib\netstandard2.0\Plugin.MaterialKit.Chips.xml" />
+    <file src="bin\Release\xamarin.ios10\Plugin.MaterialKit.Chips.dll" target="lib\xamarin.ios10\Plugin.MaterialKit.Chips.dll" />
+    <file src="bin\Release\xamarin.ios10\Plugin.MaterialKit.Chips.xml" target="lib\xamarin.ios10\Plugin.MaterialKit.Chips.xml" />
 
   </files>
 </package>

@@ -27,7 +27,7 @@ Material Componenets from material.io.
 		<p> This is base componenets for all MaterialKit.* plugins. </p>
         <p> 
             <a href="https://www.nuget.org/packages/MaterialKit.Backdrop/" rel="nofollow">
-                <img src="https://img.shields.io/badge/Nuget-1.0.0-blue.svg" style="max-width:100%;">
+                <img src="https://img.shields.io/badge/Nuget-1.0.0.1-blue.svg" style="max-width:100%;">
             </a>  
              <a href="https://github.com/enisn/Xamarin.Forms.MaterialKit/tree/master/Lib/MaterialKit.Backdrop">
                 <img src="https://img.shields.io/badge/Visit-WiKi-orange.svg" style="max-width:100%;">

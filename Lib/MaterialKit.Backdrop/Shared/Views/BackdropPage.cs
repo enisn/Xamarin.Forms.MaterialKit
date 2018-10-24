@@ -17,6 +17,7 @@ namespace Plugin.MaterialKit.Backdrop.Views
         public BackdropPage()
         {
             grdBackDrops.ChildAdded += GrdBackDrops_ChildAdded;
+            frmContent.GestureRecognizers.Add(new TapGestureRecognizer { Command = new Command(TappedToContent) });
             base.Content = new Grid
             {
                 Children =
@@ -35,6 +36,11 @@ namespace Plugin.MaterialKit.Backdrop.Views
             else
                 this.BackgroundColor = (Color)NavigationPage.BarBackgroundColorProperty.DefaultValue;
         }
+        private void TappedToContent()
+        {
+            if (PresentedIndex != -1)
+                PresentedIndex = -1;
+        }
         private void GrdBackDrops_ChildAdded(object sender, ElementEventArgs e)
         {
             if (e.Element is IBackdropView)
@@ -44,8 +50,8 @@ namespace Plugin.MaterialKit.Backdrop.Views
                     CommandParameter = this.BackdropChildren.Count - 1,
                     Command = new Command((p) => PresentedIndex = (int)p),
                 };
-                _toolbarItem.SetBinding(ToolbarItem.IconProperty, new Binding("Icon",source:e.Element));
-                _toolbarItem.SetBinding(ToolbarItem.TextProperty, new Binding("Text",source:e.Element));
+                _toolbarItem.SetBinding(ToolbarItem.IconProperty, new Binding("Icon", source: e.Element));
+                _toolbarItem.SetBinding(ToolbarItem.TextProperty, new Binding("Title", source: e.Element));
                 ToolbarItems.Add(_toolbarItem);
             }
         }
